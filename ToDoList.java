@@ -16,7 +16,7 @@ public class ToDoList {
 
     public static void main(String[] args) {
         // Connect to MongoDB
-        MongoClient mongoClient = MongoClients.create("mongodb+srv://cobrasiddharthgawai:vaishnawi25092008@mong.q6olbb5.mongodb.net/");
+        MongoClient mongoClient = MongoClients.create("uri");
         MongoDatabase db = mongoClient.getDatabase("Task");
         chores = db.getCollection("chores");
         sc = new Scanner(System.in);
